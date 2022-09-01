@@ -5,7 +5,7 @@
  * @format
  * @flow strict-local
  */
-
+ 
  import React from 'react';
  import type {Node} from 'react';
  import {
@@ -17,8 +17,12 @@
    useColorScheme,
    View,
    TextInput,
+   Image,
+   TouchableOpacity,
  } from 'react-native';
- 
+ import {Input } from 'react-native-elements'
+ import Icon from 'react-native-vector-icons/FontAwesome';
+ import Formulario from './Formulario1';
  import {
    Colors,
    DebugInstructions,
@@ -26,6 +30,7 @@
    LearnMoreLinks,
    ReloadInstructions,
  } from 'react-native/Libraries/NewAppScreen';
+import { color } from 'react-native-elements/dist/helpers';
  /*import AppNavigation from './android/app/navigation/AppNavigation';
  import MENU from './menu';
  import AppNavigationCopy from './AppNavigation copy';
@@ -67,6 +72,7 @@
    };
  
    return (
+    <Formulario/>
    );
  };
  
@@ -78,6 +84,8 @@
    sectionTitle: {
      fontSize: 24,
      fontWeight: '600',
+     color: 'gray',
+     textAlign: 'center',
    },
    sectionDescription: {
      marginTop: 8,
@@ -87,6 +95,13 @@
    highlight: {
      fontWeight: '700',
    },
+   imagen: {
+    width: 100,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
  });
  
  export default App;
